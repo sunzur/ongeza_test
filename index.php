@@ -1,5 +1,22 @@
-<?php include('connection.php');
+<?php 
+//database credentials
+define('DBHOST','localhost');
+define('DBUSER','root');
+define('DBPASS','');
+define('DBNAME','ongeza_test');
 
+try {
+
+	//create PDO connection
+	$db = new PDO("mysql:host=".DBHOST.";dbname=".DBNAME, DBUSER, DBPASS);
+	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch(PDOException $e) {
+	//show error
+    echo '<p class="bg-danger">'.$e->getMessage().'</p>';
+}   
+   
+// Save customer details
 if(isset($_POST["create_customer"])){
 	        $first_name = $_POST['first_name'];
 	       $last_name = $_POST['last_name'];
@@ -49,9 +66,9 @@ $smg_data[] = '<div class="success">
                 ':id' => $deletecust
 				));
 header("Refresh:0; index.php");
-				}
+}
 				
-
+// Update customer details
 if(isset($_POST["create_customer_update"])){
 	        $first_name = $_POST['first_name'];
 	       $last_name = $_POST['last_name'];
