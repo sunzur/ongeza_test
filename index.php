@@ -144,6 +144,26 @@ header("Refresh:1;index.php");
                 display: inline-block;              
                 border-radius: 5px;
             }
+			.myform_button_sub_edit{
+				 background-color: #ffbb33;
+                border: none;
+                color: white;
+                padding: 3px 5px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;              
+                border-radius: 5px;
+			}
+			.myform_button_sub_delete{
+				 background-color: red;
+                border: none;
+                color: white;
+                padding: 3px 5px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;              
+                border-radius: 5px;
+			}
             
             .myform_button_upd {
                 background-color: #ffbb33;
@@ -351,12 +371,14 @@ header("Refresh:1;index.php");
                         </tr>
 						<?php }}
                           else{
-							  echo "<p>WHOOPS! Currently there is no customer to display <br> Please click the button above to create new customer</p>";
+							  echo "<p>Whoops! Currently there is no customer created to be displayed <br> Please click the button above to create customers</p>";
 						  }
 						?>
                     </table>
                     <?php } ?>
+					
         </div>
+		
     </body>
 
     </html>
