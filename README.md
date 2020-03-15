@@ -18,5 +18,6 @@ Note: For windows and Linux I suggest to install latest xampp, after installatio
 1. Open your desired browser then type http://localhost/phpmyadmin/ create ne database.
 2. Then create database ongeza_test and import database file ongeza_test.sql located in your downloaded files.
 3. Then copy downloaded project to your htdocs folder example on my window computer C:\xampp\htdocs.
+4. Rename the downloaded project to ongeza_test
 4. Open your desired browser then type http://localhost/ongeza_test/ start create customer.
 
